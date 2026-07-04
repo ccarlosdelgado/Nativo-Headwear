@@ -1,3 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+  --background: #F8F6F2;
+  --foreground: #111111;
+  --muted: #777777;
+  --accent: #8C654A;
+  --border: #ECE6DF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+}
+
+section {
+  padding: 8rem 2rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+::selection {
+  background: #8C654A;
+  color: white;
+}
